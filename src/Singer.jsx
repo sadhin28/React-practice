@@ -1,10 +1,11 @@
 export default function Singer({singer}){
-    console.log(singer)
-   
+    //use destructuring
+   const {id,name,age}=singer
     return(
         <div>
-            <h3>Singer:{singer.name} </h3>
-            <p>age: {singer.age}</p>
+            <h3>Singer:{name} </h3>
+            <p>age: {age}</p>
+            <p>Id: {id}</p>
         </div>
     )
 }
