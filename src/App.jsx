@@ -3,14 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ToDo from './ToDo'
+import Actor from './Actor'
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
+  const actors =['sakib', 'Raj', 'jasim','Ruble','Omorsani']
   return (
     <>
       
      <h1>vite + React</h1>
-     <ToDo task="Learn React" isDone= {true}></ToDo>
+     
+     {
+      actors.map(actor=><Actor name={actor}></Actor>)
+     }
+     {/* <ToDo task="Learn React" isDone= {true}></ToDo>
      <ToDo task="Learn JavaScript" isDone={false}></ToDo>
      <ToDo task="Learn MongoDb" isDone={true}></ToDo>
      <Person></Person>
@@ -20,7 +25,7 @@ function App() {
     <Developer></Developer>
     <Device name="Laptop" price="115150"></Device>
     <Device name="mobile" price="11298"></Device>
-    <Device name="watch" price="400"></Device>
+    <Device name="watch" price="400"></Device> */}
     </>
   )
 }
