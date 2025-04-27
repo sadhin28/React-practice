@@ -13,6 +13,9 @@ function App() {
      <Person></Person>
     <Student></Student>
     <Developer></Developer>
+    <Device name="Laptop" price="115150"></Device>
+    <Device name="mobile" price="11298"></Device>
+    <Device name="watch" price="400"></Device>
     </>
   )
 }
@@ -56,5 +59,11 @@ function Developer(){
        <p>age: 40 </p>
      </div>
   )
+}
+function Device(props){
+  console.log(props)
+   return (
+    <h2>This Device: {props.name} & price: {props.price}</h2>
+   )
 }
 export default App
