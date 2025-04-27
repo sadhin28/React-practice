@@ -2,11 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ToDo from './ToDo'
+import ToDo from './toDo'
 import Actor from './Actor'
 function App() {
  
-  const actors =['sakib', 'Raj', 'jasim','Ruble','Omorsani']
+  const actors =['sakib', 'Raj', 'jasim','Ruble','Omorsani'];
+  const singers =[
+    {name:'Dr . Mahfuzur Rahman', age:68},
+    {name:'Eva Rahman', age:38},
+    {name:'Shuvro Dev', age:58},
+    {name:'Pritom', age:28},
+    
+  ]
   return (
     <>
       
