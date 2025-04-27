@@ -26,9 +26,25 @@
 
 //conditional rendering using ternary operator 3
 
+// export default function ToDo({task,isDone}){
+//       return(
+//         <li> {isDone?'finished' : 'work on '} : 
+//       {task}</li>
+//       )
+//  }
+
+
+//conditional rendering option 4: using && operator
+
+// export default function ToDo({task,isDone}){
+//     return(
+//         <li>{task} {isDone && 'done'}</li>
+//     )
+// }
+
+//conditional rendering option 4: using (|| or) operator
 export default function ToDo({task,isDone}){
-      return(
-        <li> {isDone?'finished' : 'work on '} : 
-      {task}</li>
-      )
- }
+    return(
+        <li>{task} {isDone || 'do it'}</li>
+    )
+}
