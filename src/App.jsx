@@ -11,7 +11,9 @@ function App() {
       
      <h1>vite + React</h1>
      <Person></Person>
-    <Student></Student>
+    <Student name="Taosif" grade="7" score="99"></Student>
+    <Student  name="Rewran" grade="4" score="90"></Student>
+    <Student name="Rayhan" grade="8" score="99"></Student>
     <Developer></Developer>
     <Device name="Laptop" price="115150"></Device>
     <Device name="mobile" price="11298"></Device>
@@ -31,13 +33,16 @@ function App() {
         <h3>I am a {person.name} with age : {person.age} and home {person.home}</h3>
       )
 }
-function Student(){
+const { grade, score,name}={ grade:'7',score:'99',name:'a'}
+function Student({grade,score,name}){
+
     return(
       <div className='student'>
+        
         <h3>This is a student</h3>
-        <p>Name :</p>
-        <p>age :</p>
-        <p>home :</p>
+        <p>Name: {name}</p>
+        <p>Grade : {grade}</p>
+        <p>Score: {score}</p>
       </div>
     )
 }
@@ -61,7 +66,7 @@ function Developer(){
   )
 }
 function Device(props){
-  console.log(props)
+  // console.log(props)
    return (
     <h2>This Device: {props.name} & price: {props.price}</h2>
    )
