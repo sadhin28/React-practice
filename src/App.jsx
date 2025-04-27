@@ -34,7 +34,7 @@ function App() {
       )
 }
 const { grade, score,name}={ grade:'7',score:'99',name:'a'}
-function Student({grade,score,name}){
+function Student({grade='0',score='0',name='Not Found'}){
 
     return(
       <div className='student'>
