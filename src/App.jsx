@@ -4,14 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ToDo from './toDo'
 import Actor from './Actor'
+import Singer from './singer'
 function App() {
  
   const actors =['sakib', 'Raj', 'jasim','Ruble','Omorsani'];
   const singers =[
-    {name:'Dr . Mahfuzur Rahman', age:68},
-    {name:'Eva Rahman', age:38},
-    {name:'Shuvro Dev', age:58},
-    {name:'Pritom', age:28},
+    {id:1 ,name:'Dr . Mahfuzur Rahman', age:68},
+    {id:2 ,name:'Eva Rahman', age:38},
+    {id:3,name:'Shuvro Dev', age:58},
+    {id:4,name:'Pritom', age:28},
     
   ]
   return (
@@ -22,6 +23,11 @@ function App() {
      {
       actors.map(actor=><Actor name={actor}></Actor>)
      }
+
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
+
      {/* <ToDo task="Learn React" isDone= {true}></ToDo>
      <ToDo task="Learn JavaScript" isDone={false}></ToDo>
      <ToDo task="Learn MongoDb" isDone={true}></ToDo>
