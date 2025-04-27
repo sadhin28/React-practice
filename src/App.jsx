@@ -12,6 +12,7 @@ function App() {
      <h1>vite + React</h1>
      <Person></Person>
     <Student></Student>
+    <Developer></Developer>
     </>
   )
 }
@@ -36,5 +37,24 @@ function Student(){
         <p>home :</p>
       </div>
     )
+}
+function Developer(){
+  const DeveloperStyle ={
+     margin:'20px',
+     padding:'20px',
+     border:'2px solid purple',
+     borderRadius:'10px'
+  }
+  return (
+     <div style={{
+      margin:'20px',
+      padding:'20px',
+      border:'2px solid purple',
+      borderRadius:'10px'
+   }}>
+       <h4>devu loper</h4>
+       <p>age: 40 </p>
+     </div>
+  )
 }
 export default App
