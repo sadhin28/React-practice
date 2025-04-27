@@ -29,7 +29,7 @@ function App() {
 }
 function Student(){
     return(
-      <div>
+      <div className='student'>
         <h3>This is a student</h3>
         <p>Name :</p>
         <p>age :</p>
